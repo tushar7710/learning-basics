@@ -1,0 +1,222 @@
+body{
+    background: url('img/people-2604149_1920.jpg');
+    position: relative;
+    
+    
+    background-repeat: no-repeat;
+}
+#logo{
+    position: relative;
+
+    left: 5px;
+    top: 5px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+
+}
+#logo img
+{
+    height:50px ;
+    width: 50px;
+}
+
+#navi li
+{
+  
+        
+   
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    float: left;
+    list-style: none;
+    
+    position: relative;
+    left: 300px;
+    top: -90px;
+    padding: 15px;
+
+}
+li a
+{
+color: white;
+text-decoration:none;
+}
+li a:hover
+{
+    text-decoration: underline;
+    color: rgb(165, 141, 141);
+}
+#search
+{
+    
+    font-size: 15px;
+    margin-left: 950px;
+    position: relative;
+    top: -80px;
+}
+#wlc
+{
+    margin-top: 180px;
+    text-align: center;
+    font-size: 80px;
+    font-family:Lucida Handwriting ;
+}
+#gname
+{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 40px;
+    font-size: 90px;
+    font-family: Brush Script MT;
+}
+.offer
+{
+    background-image: url('https://wallpapertag.com/wallpaper/full/3/0/e/124361-gym-background-2000x1500-for-android-40.jpg');
+    height: 14440px;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    margin-top: 450px;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    
+    
+}
+#weoffer
+{
+    padding-top: 50px;
+}
+#trainer
+{
+    display:inline-block;    
+    margin-left: 0px;
+    padding-left: 0%;
+    width: 500px;
+    height: 400px;
+}
+#htrain
+{
+    display:inline-block;
+    margin-top: 0;
+    font-size: 40px;
+}
+#btrain
+{
+    display:inline-block;
+    margin-top: -45px;
+    font-size: 20px;
+}
+
+#diet
+{
+    display:inline-block;
+    margin-top: -550px;
+    margin-left: 50px;
+    width: 500px;
+    height: 400px;
+}
+#hdiet
+{
+    margin-top: 0;
+    font-size: 40px;
+}
+#bdiet
+{
+
+    margin-top: -25px;
+    font-size: 20px;
+}
+#yoga
+{
+    margin-top: 20px;
+    margin-left: 70px;
+    position: relative;
+    top: 10px;
+    
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+}
+#hyoga
+{
+    
+    margin-top: 0;
+    font-size: 40px;
+    display: inline-block;
+}
+#byoga
+{
+    display: inline-block;
+    margin-top: -25px;
+    font-size: 20px;
+}
+#zumba
+{
+    position: relative;
+    top: -180px;
+    left: -200px;
+    width: 500px;
+    height: 300px;
+}
+#hzumba
+{
+    position: relative;
+    left: -510px;
+    top: -140px;
+    margin-top: 0;
+    font-size: 40px;
+    display: inline-block;
+}
+#bzumba
+{
+    position: relative;
+    left: -840px;
+    top: -80px;
+    text-align: center;
+    display: inline-block;
+    margin-top: -25px;
+    font-size: 20px;
+}
+#hygiene
+{
+    display:inline-block;
+    position: relative;
+    left:10px ;
+    top:-65px ;
+    margin-top: -550px;
+    margin-left: 50px;
+    width: 400px;
+    height: 300px;
+}
+#hhygiene
+{
+    margin-top: ;
+    font-size: 40px;
+}
+#bhygiene
+{
+
+    margin-top: -25px;
+    font-size: 20px;
+}
+#restroom
+{
+    display:inline-block;
+    margin-top: -550px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+}
+#hrestroom
+{
+    margin-top: 0;
+    font-size: 40px;
+}
+#brestroom
+{
+
+    margin-top: -25px;
+    font-size: 20px;
+}

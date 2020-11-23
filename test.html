@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box
+    {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        color: cornsilk  ;
+        flex-direction: column;
+
+        border: 2px solid black;
+    }
+    #test1
+    {
+       
+        background-color: blue;
+    }
+    #test2
+    {
+        
+ 
+        position: relative;
+        /* z-index: 40;
+        top: 40px; */
+        background-color: yellow;
+        
+    }
+    #test3
+    {
+
+        position: relative;
+        /* z-index: 30; */
+        background-color: black;
+    }
+    .hello
+    {
+        border: 2px solid red;
+        height: 580px;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+</style>
+</head>
+<body>
+    <div class="hello">
+    <div class="box" id="test1">flex 1</div>
+    <div class="box" id="test2">flex 2</div>
+    <div class="box" id="test3">flex 3</div>
+    </div>
+</body>
+</html>
