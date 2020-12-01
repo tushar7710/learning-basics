@@ -1,57 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    .box
-    {
-        display: inline-block;
-        width: 200px;
-        height: 150px;
-        color: cornsilk  ;
-        flex-direction: column;
-
-        border: 2px solid black;
-    }
-    #test1
-    {
-       
-        background-color: blue;
-    }
-    #test2
-    {
+    <style>
+    .box {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: rgb(126, 126, 126);
+            flex-direction: column;
+            border: 2px solid black;
+        }
         
- 
-        position: relative;
-        /* z-index: 40;
+        p {
+            text-align: center;
+        }
+        
+        #test1 {
+            background-color: blue;
+        }
+        
+        #test2 {
+            position: relative;
+            /* z-index: 40;
         top: 40px; */
-        background-color: yellow;
+            background-color: yellow;
+        }
         
+        #test3 {
+            position: relative;
+            /* z-index: 30; */
+            background-color: black;
+        }
+        
+        .hello {
+            border: 2px solid red;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .responsive {
+            position: relative;
+            top: 20px;
+            background-color: black;
+            display: none;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        
+        @media only screen and (max-width: 400px) {
+            #mobile {
+                display: block;
+                color: white;
+                background-color: blue;
+            }
+        }
+        
+        @media only screen and (min-width: 401px) and (max-width: 1000px) {
+            #tablet {
+                background-color: red;
+                display: block;
+                color: white;
+            }
+        }
+        
+        @media only screen and (min-width: 1001px) {
+            #computer {
+                background-color: sandybrown;
+                display: block;
+                color: white;
+            }
+        }
+        
+        .select div>p {
+            background-color: black;
+            color: white;
+        }
+        
+        #shadow {
+            background-color: cadetblue;
+            border: 2px solid black;
+            text-align: center;
+            box-shadow: 10px 10px 6px rgb(27, 27, 22);
+            text-shadow: 1px 2px white;
+        }
+        
+        .boxcolor {
+            margin-top: 30px;
+            padding: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            --box-color: red;
+        }
+        
+        #b1,
+        #b2,
+        #b3 {
+            padding: 10px;
+            border: 2px solid black;
+            background-color: var(--box-color);
+        }
+        
+        #aplhac {
+            background-color: rgb(236, 231, 231);
+            color: rgba(14, 11, 11, 0.541);
+            border-radius: 10px;
+        }
+        
+        #m1 {
+            border: 3px solid black;
+            text-align: center;
+        }
+        
+        marquee {
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+        }
+        
+        * {
+            border-radius: 5px;
+        }
+        
+        #m2 {
+            display: block;
+            border: none;
+        }
+        
+        #a1 {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            width: 600px;
+            height: 300px;
+            animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            margin: auto;
+        }
+        
+        @keyframes animation {
+            from {
+                background-color: red;
+                width: 600px;
+                height: 300px;
+            }
+            to {
+                background-color: rgb(168, 182, 155);
+                width: 100%;
+                height: 300px;
+            }
+        }
+        
+        #a2 {
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+            justify-content: center;
+            background-color: rgb(83, 51, 51);
+            width: 400px;
+            height: 200px;
+            animation-name: animation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: alternate;
+        }
+        
+        @keyframes animation2 {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+            25% {
+                top: 0px;
+                left: 65%;
+                background-color: rgb(168, 182, 155);
+            }
+            50% {
+                top: 250px;
+                left: 65%;
+                background-color: rgb(140, 204, 81);
+            }
+            75% {
+                top: 250px;
+                left: 0%;
+                background-color: rgb(75, 124, 50);
+            }
+            100% {
+                top: 0px;
+                left: 0;
+                background-color: rgb(79, 110, 49);
+            }
+        }
     }
-    #test3
-    {
-
-        position: relative;
-        /* z-index: 30; */
-        background-color: black;
+    #t1 :hover {
+        background-color: rgb(83, 51, 51);
+        text-align: center;
+        font-size: 30px;
     }
-    .hello
-    {
-        border: 2px solid red;
-        height: 580px;
+    #ani {
+        height: 785px;
+    }
+    #t1 {
+        padding: 0;
+        margin: auto;
+        width: 20%;
+        display: block;
+        background-color: rgb(224, 143, 37);
+        text-align: center;
+        font-size: 30px;
+        transition-duration: 2s;
+    }
+    #t1:hover {
+        width: 800px;
+        height: 60px;
+        font-size: 50px;
+        border-radius: 20px;
+        background-color: brown;
+    }
+    h3 {
+        margin: 0%;
+    }
+    .transform {
+        /* border: 5px solid black; */
+        
+        border-radius: 30px;
+        height: 800px;
+        font-size: 40px;
+        width: 500px;
         display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: burlywood; */
         
-        justify-content: space-between;
+        transform: rotate(45deg);
+        transition-duration: 10s;
     }
-</style>
+    #square {
+        transform: rotate(-45deg);
+    }
+    .transform:hover {
+        transform: rotate(1125deg);
+    }
+    body {
+        background-image: url('https://i.pinimg.com/originals/86/ff/b8/86ffb87572d657f335cd7cd828c70de3.jpg');
+        background-repeat: repeat-y;
+        height: 100%;
+    }
+    #sharingan {
+        border-radius: 300px;
+    }
+    </style>
 </head>
+
 <body>
     <div class="hello">
-    <div class="box" id="test1">flex 1</div>
-    <div class="box" id="test2">flex 2</div>
-    <div class="box" id="test3">flex 3</div>
+        <div class="box" id="test1">flex 1</div>
+        <div class="box" id="test2">flex 2</div>
+        <div class="box" id="test3">flex 3</div>
     </div>
+    <div>
+        <div class="responsive" id="mobile">
+            This is Mobile
+        </div>
+        <div class="responsive" id="tablet">
+            This is Tablet
+        </div>
+        <div class="responsive" id="computer">
+            This is Computer
+        </div>
+
+    </div>
+    <p>Yeh nhi hoga</p>
+    <div class="select">
+        <p>div se pehle wala para</p>
+        <div>
+            <p>pehla para</p>
+            <li>
+                <p>dusra para</p>
+            </li>
+
+        </div>
+        <p>div ke bahar wala para</p>
+
+    </div>
+    <div id="shadow">
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel velit, tempora totam atque adipisci at provident iste sequi nostrum!</p>
+    </div>
+
+    <div class="boxcolor">
+        <div id="b1">
+            <h2>Box 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, cum.</p>
+        </div>
+        <div id="b2">
+            <h2>Box 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, cum.</p>
+        </div>
+        <div id="b3">
+            <h2>Box 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, cum.</p>
+
+        </div>
+    </div>
+    <div id="aplhac">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, fugit!
+        </p>
+    </div>
+    <marquee id="m1" direction="down" height=200px width=100% scrollamount="10">
+        <marquee id="m2" direction="right" height=100% width=100% scrollamount="25"> hello</marquee>
+    </marquee>
+
+    <div id="ani">
+        <div id="a1">
+            <h2>animation 1</h2>
+        </div>
+        <div id="a2">
+            <h2>animation 2</h2>
+        </div>
+    </div>
+
+    <div class="transition">
+        <div id="t1">
+            <h3>
+                Sharingan
+            </h3>
+        </div>
+    </div>
+
+    <div class="transform">
+        <div id="square">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/mangekyou-sharingan-farrukh-shumail.jpg" id="sharingan" width="500px" height="600px">
+
+        </div>
+    </div>
+
+    <div id="loader">
+
+    </div>
+
+
+
 </body>
+
 </html>
