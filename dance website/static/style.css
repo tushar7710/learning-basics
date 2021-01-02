@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: url('https://i.pinimg.com/originals/7a/15/c8/7a15c857acbff97caef423d03ebb2403.jpg');
+    font-family: 'Courgette', cursive;
+    margin: 0%;
+    padding: 0%;
+    font-size: 25px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background-color: #000000;
+}
+
+#limg {
+    margin-left: 10px;
+    filter: invert(1);
+    height: 60px;
+}
+
+#logo {
+    font-size: 20px;
+    margin: 20px 5px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-right: 20%;
+}
+
+ul {
+    /* justify-content: center; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: auto 0px;
+    text-align: center;
+    font-size: 35px;
+    list-style: none;
+}
+
+a {
+    padding: 0px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    border-radius: 10px;
+    background-color: rgb(99, 69, 64);
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+}
+
+.bac {
+    color: white;
+}
+
+#welcome {
+    font-family: 'Dancing Script', cursive;
+    padding: 5% 0px 3% 0px;
+    font-size: 80px;
+    text-align: center;
+}
+
+#quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.goal {
+    background: url('https://i.pinimg.com/originals/76/1c/2c/761c2c85e3c6a683355282bd2a172c4e.jpg');
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h1 {
+    padding: 2%;
+}
+
+.gbox {
+    width: 30%;
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.bod {
+    font-size: 25px;
+}
+
+.gimg {
+    margin-left: 10px;
+}
+
+.img {
+    height: 250px;
+    border-radius: 20px;
+}
+
+.gcontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sponsorsection {
+    background: url('https://i.pinimg.com/originals/76/1c/2c/761c2c85e3c6a683355282bd2a172c4e.jpg');
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.sbox {
+    width: 30%;
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 15px;
+}
+
+.simg {
+    height: 250px;
+    margin: 20px 5px;
+    border-radius: 10px;
+}
+
+#footer {
+    padding: 15px;
+    font-family: initial;
+    color: white;
+    font-weight: 400;
+    background-color: coral;
+    text-align: center;
+}

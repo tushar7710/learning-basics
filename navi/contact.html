@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#navi {
+            border-radius: 20px;
+            background-color: #274c27
+        }
+        
+        div#navi ul {
+            overflow: auto;
+        }
+        
+        div#navi li {
+            float: left;
+            list-style: none;
+            margin: 20px 30px;
+        }
+        
+        div#navi li a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            padding: 3px 3px;
+            margin: auto;
+        }
+        
+        div#navi li a:hover {
+            color: rgb(180, 122, 122);
+        }
+        
+        #search {
+            float: right;
+            border-radius: 20px;
+        }
+        
+        div.search {
+            padding: 5px 40px;
+            border-radius: 10px;
+            margin-top: 13px;
+            margin-right: 150px;
+        }
+        
+        #navi input {
+            margin: 1px 50px;
+            padding: 8px 51px;
+        }
+        
+        #navi #contact {
+            color: rgb(189 141 141);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navi">
+        <ul>
+            <li>
+                <a href="/" id="home">
+				 Home
+				</a>
+            </li>
+            <li>
+                <a href="/profile" id="profile">
+		    Profile
+	       </a>
+            </li>
+            <li>
+                <a href="/about" id="about">
+		         About
+	            </a>
+            </li>
+            <li>
+                <a href="/contact" id="contact">
+       		   Contact Us
+       	     </a>
+            </li>
+
+
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search Here">
+            </div>
+        </ul>
+    </div>
+    this is contact page
+</body>
+
+</html>

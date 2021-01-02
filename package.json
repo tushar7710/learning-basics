@@ -1,0 +1,24 @@
+{
+  "name": "html-learning",
+  "version": "1.0.0",
+  "main": "Mongo.js",
+  "dependencies": {
+    "mongoose": "^5.11.9",
+    "tushar": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar7710/learning-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar7710/learning-basics/issues"
+  },
+  "homepage": "https://github.com/tushar7710/learning-basics#readme",
+  "description": ""
+}

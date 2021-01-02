@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #magic {
+            font-size: 40px;
+            font-family: cursive;
+            text-align: center;
+        }
+        
+        .clockh {
+            background-color: burlywood;
+            padding: 20px 0px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        
+        #clock {
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="heyo">
+        <h3 class="clockh">
+            Current Date And Time is : <span id="clock">
+                
+            </span>
+        </h3>
+        <div id="import"></div>
+        <p id="cont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fuga. Nobis atque maxime deserunt et! Cupiditate tenetur veniam optio rerum!
+
+        </p>
+    </div>
+    <div id="magic">
+        Everything in this universe can disappear and that include this text.
+    </div>
+    <div class="test">
+        <div id="nest1">
+            <ul id="nest">
+                <li>I am nested one n list 1</li>
+                <li>I am nested one n list 2</li>
+                <li>I am nested one n list 3</li>
+            </ul>
+
+        </div>
+        This is part of class P1
+    </div>
+    <div class="test">
+        This is also a part of class P2
+    </div>
+
+    <div class="hide">
+        <p id="content">
+            Tell people there's an invisible man in the sky who created the universe, and the vast majority will believe you. Tell them the paint is wet, and they have to touch it to be sure. Everything is Good till I am that invisible man.
+        </p>
+        <button id="btn" onclick="hide()">
+            Show/Hide
+        </button>
+    </div>
+
+    <p id="hellot">
+
+    </p>
+
+    <script>
+        var a = 6;
+        var b = 7.54;
+        var c = "hello";
+        var d = '1 ';
+        var e = `2`;
+        var f = "3";
+        h = new String("arigato");
+        console.log(h);
+
+        g = "boom";
+
+        console.log(a);
+        console.log(c);
+        console.log(b);
+        tem = `${d}... The countdown has started prepare your self to die ${e}..... Haha U r so done for ${f}.... here goes nothin ${g} Aaaaahhhaa gotcha`;
+        console.log(tem);
+        document.getElementById('import').innerHTML = '<h2> heeeeeeeeeya</h2>'
+
+        /* String functions for JS */
+        console.log('String fuctions');
+        str = "the Hell is Empty and all the demons are here";
+        console.log(str.length);
+        console.log(str[5]);
+        console.log(str.indexOf('the'))
+        console.log(str.lastIndexOf('the'))
+        console.log(str.slice(1, 5))
+        console.log(str.substring(1, 5))
+        console.log(str.substr(1, 5))
+            /* toUpperCase(),toLowerCase(),trim(),replace('',''),concat(),charAt(),charCodeAt(). some more  */
+
+
+        /* variable types and their scope */
+        /* var(global),let(scope is just within a block),const(value doesnt change) */
+
+        /* object of name hello */
+        let hello = {
+            name: "tushar",
+            age: 20,
+            title: "Creator",
+        }
+        console.log(hello);
+        console.log(hello.age);
+
+        /* if-else and Switch case same as in any other language */
+
+        /* array functions in JS */
+        /* .sort()),.push() */
+
+        /* fuctions in JS */
+        function callme(name, name1) {
+            console.log(name + " is " + name1);
+            console.log(name1 + " is " + name);
+        }
+        let name = "Tushar";
+        let name1 = "God";
+        callme(name, name1);
+
+        function value(t1, t2) {
+            return t1 + t2;
+        }
+        t1 = 6;
+        t2 = 7;
+        o = value(t1, t2);
+        console.log(o);
+
+        /* Interaction Pop-up Function */
+        /* alert function */
+        alert("Swadhaan rahe shatark rahe");
+
+        /* prompt function */
+        username = prompt("what is ur name?", "tushar");
+        console.log(username);
+
+        /* confirm function */
+        let submit = confirm("Do you really wanna enter this site..........?");
+        if (submit) {
+            console.log("Website Entry phase 1 Granted");
+        } else {
+            console.log("Website Entry phase 1 Rejected");
+        }
+        let sure = confirm("U really sure about that .I am telling you,You will regret it later");
+        if (submit) {
+            console.log("Website Entry Granted");
+        } else {
+            console.log("Website Entry Rejected");
+        }
+
+
+
+        for (let i = 1; i < 10; i++) {
+            console.log(`heelo =${i}`);
+        }
+
+        let anime = ["naruto", "death note", "attack on titan", "code geass"];
+        anime.forEach(element => {
+            console.log(element + " is one of the best anime ever")
+
+        });
+        for (element of anime) {
+            console.log(element + " is the best anime ");
+
+        }
+
+        let aot = {
+            best_character: "eren yeager",
+            wifey_material: "mikasa ackerman",
+            best_girl: "armin"
+        }
+        for (key in aot) {
+            console.log(`The ${key} of the show is ${aot[key]}`);
+        }
+
+        let magic = document.getElementById('magic');
+        console.log(magic);
+        magic.innerHTML = `You dont know what's happening here do you...? Still Ohayou-gozaimasu! ${username} `
+
+        let test = document.getElementsByClassName('test');
+        console.log(test);
+        console.log(test[0]);
+        let sel = document.querySelector('.test');
+        console.log("Selector returns ", sel);
+        sel = document.querySelectorAll('.test');
+        console.log("Selector returns ", sel);
+
+        let selo = document.querySelectorAll('#nest>li');
+        console.log("Selector returns list type ", selo);
+        sel[1].innerHTML = "I changed something";
+
+        function hide() {
+            let btn = document.getElementById('btn');
+            let content = document.getElementById('content');
+            if (content.style.display != 'none') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+
+        }
+        let content = document.getElementById('content');
+        content.addEventListener('mouseover', function run() {
+            alert('Mouse is over');
+        });
+
+        content.addEventListener('mouseout', function run() {
+            alert('Mouse is out now');
+        });
+
+        function time() {
+            console.log("Hello There , how U doin.....? [Text receiving from unknown sources...............]");
+
+        }
+        setTimeout(time, 5000);
+
+        function time1() {
+
+            hellot.innerHTML = "Hello there this might me difficult to understand but i am your future self <br>";
+        }
+        setTimeout(time1, 5000);
+
+        function time2() {
+
+            hellot.innerHTML = "And before you reach to any conclusion, thinking this is just some sort of prank let me tell you about ur secret that no-one knows \n";
+        }
+        setTimeout(time2, 12500);
+
+        function time3() {
+
+            hellot.innerHTML = "On 5th of may 2015 when you decided to bunk the class and chill near the gomti river front you saw something that u wished u never saw";
+        }
+        setTimeout(time3, 19000);
+
+        function time4() {
+
+            hellot.innerHTML = "we are from the faction known as 'Black Pheonix' have choosen you for very Important Mission, Everything is gonna end on 1st february of 2021 and only you can help us in saving your and our future. We will soon contact you,till then dont say anything to anyone, the friends you grow-up with are also involved in it. And after reading this delete this html file And remember no-one can be trusted ";
+        }
+        setTimeout(time4, 25000);
+
+        function time5() {
+
+            hellot.innerHTML = " ";
+        }
+        setTimeout(time5, 70000);
+
+        function future(name, future) {
+            console.log(name + "The Day you will die is : " + future);
+        }
+        setInterval(future, 2000, "Tushar ", " 10th of may, 2880");
+
+        function clock() {
+            clock = new Date();
+            document.getElementById('clock').innerHTML = clock;
+        }
+        setInterval(clock, 1);
+
+
+
+        let clock1 = new Date(0);
+        console.log(clock1);
+        let clock2 = new Date("2020-11-16");
+        console.log(clock2);
+        let clock3 = new Date(3021, 4, 5, 6, 7, 40);
+        console.log(clock3);
+        let yr = new Date().getFullYear();
+        console.log("Current Year is :" + yr);
+        let clock0 = new Date();
+        clock0.setDate(30);
+        console.log("Current :" + clock0);
+        let jsono = {
+            name: "Tushar",
+            age: 20,
+            powers: "Highly Classified (Might posses threat to family n friends)",
+
+        }
+        console.log(jsono);
+        let jsonstr = JSON.stringify(jsono);
+        console.log(jsonstr);
+
+        console.log(jsonstr[0]);
+
+
+        jsonstr = jsonstr.replace('Tushar', 'God');
+        console.log(jsonstr);
+
+        jsonstr = JSON.parse(jsonstr);
+        console.log(jsonstr);
+    </script>
+</body>
+<style>
+    * {
+        text-align: center;
+        font-size: 25px;
+    }
+</style>
+
+</html>

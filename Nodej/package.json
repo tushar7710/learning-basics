@@ -1,0 +1,19 @@
+{
+    "name": "npm",
+    "version": "1.0.0",
+    "description": "mera package mera package",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "hello"
+    ],
+    "author": "tushar",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^2.0.6",
+        "slugify": "^1.4.6"
+    },
+    "devDependencies": {}
+}
